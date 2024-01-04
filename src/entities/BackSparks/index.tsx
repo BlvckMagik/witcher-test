@@ -10,7 +10,7 @@ export const BackSparks = styled("img")(({ theme }) => ({
   bottom: 0,
   left: "-428px",
   willChange: "transform",
-  transition: "all 1s",
+  transition: "height height 1s",
 
   [theme.breakpoints.down("lg")]: {
     height: "705px",

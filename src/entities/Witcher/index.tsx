@@ -11,7 +11,7 @@ export const Witcher = styled("img")(({ theme }) => ({
   bottom: 0,
   left: "-405px",
   willChange: "transform",
-  transition: "all 1s",
+  transition: "height 1s",
 
   [theme.breakpoints.down("lg")]: {
     height: "710px",

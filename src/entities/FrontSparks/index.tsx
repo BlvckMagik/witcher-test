@@ -10,7 +10,7 @@ export const FrontSparks = styled("img")(({ theme }) => ({
   bottom: 0,
   left: "-426px",
   willChange: "transform",
-  transition: "all 1s",
+  transition: "height 1s",
 
   [theme.breakpoints.down("lg")]: {
     height: "476px",
