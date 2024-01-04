@@ -11,6 +11,7 @@ const BonusBlock: React.FC = () => {
       <Styled.BonusLabel variant="h3">WELCOME BONUS</Styled.BonusLabel>
       <CopyCode />
       <PlayButton color="secondary">PLAY NOW</PlayButton>
+      <Styled.Terms>*Terms and Conditions Apply</Styled.Terms>
     </Styled.Container>
   );
 };

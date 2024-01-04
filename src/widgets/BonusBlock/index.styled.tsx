@@ -3,6 +3,7 @@ import { Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
 export const Container = styled("section")(({ theme }) => ({
+  position: "relative",
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
@@ -28,6 +29,21 @@ export const Percents = styled(Typography)(({ theme }) => ({
   [theme.breakpoints.down("sm")]: {
     fontSize: "76px",
     lineHeight: "80px",
+  },
+}));
+
+export const Terms = styled(Typography)(({ theme }) => ({
+  color: "#464646",
+  fontFamily: "Arial",
+  fontSize: "13px",
+  fontWeight: 600,
+  position: "absolute",
+  bottom: "46px",
+  right: "-143px",
+
+  [theme.breakpoints.down("lg")]: {
+    position: "static",
+    marginTop: "10px",
   },
 }));
 
