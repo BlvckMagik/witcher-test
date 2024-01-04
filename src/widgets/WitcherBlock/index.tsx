@@ -6,17 +6,30 @@ import { BackSparks } from "@entities/BackSparks";
 import { Witcher } from "@entities/Witcher";
 import { FrontSparks } from "@entities/FrontSparks";
 import { Logo } from "@entities/Logo";
+import { useTheme } from "@mui/material/styles";
+import { useMediaQuery } from "@mui/material";
 
 import * as Styled from "./index.styled";
 
 const WitcherBlock: React.FC = () => {
-  useEffect(() => {
-    document.addEventListener("mousemove", applyParallaxEffect);
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.down("md"));
 
-    return () => {
-      document.removeEventListener("mousemove", applyParallaxEffect);
-    };
-  }, []);
+  useEffect(() => {
+    if (matches) {
+      document.addEventListener("mousemove", applyParallaxEffect);
+
+      return () => {
+        document.removeEventListener("mousemove", applyParallaxEffect);
+      };
+    } else {
+      document.addEventListener("mousemove", applyParallaxEffect);
+
+      return () => {
+        document.removeEventListener("mousemove", applyParallaxEffect);
+      };
+    }
+  }, [matches]);
 
   return (
     <Styled.Container>

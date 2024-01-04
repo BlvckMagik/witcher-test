@@ -19,5 +19,6 @@ export const Witcher = styled("img")(({ theme }) => ({
 
   [theme.breakpoints.down("sm")]: {
     height: "500px",
+    // transition: "all 1s",
   },
 }));
