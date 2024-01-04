@@ -17,16 +17,16 @@ const WitcherBlock: React.FC = () => {
 
   useEffect(() => {
     if (matches) {
-      document.addEventListener("mousemove", applyParallaxEffect);
+      document.addEventListener("deviceorientation", applyParallaxEffect);
 
       return () => {
-        document.removeEventListener("mousemove", applyParallaxEffect);
+        document.removeEventListener("deviceorientation", applyParallaxEffect);
       };
     } else {
-      document.addEventListener("mousemove", applyParallaxEffect);
+      document.addEventListener("deviceorientation", applyParallaxEffect);
 
       return () => {
-        document.removeEventListener("mousemove", applyParallaxEffect);
+        document.removeEventListener("deviceorientation", applyParallaxEffect);
       };
     }
   }, [matches]);
