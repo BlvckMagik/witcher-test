@@ -5,7 +5,7 @@ export const BackSparks = styled("img")(({ theme }) => ({
   zIndex: 1,
   backgroundSize: "contain",
   backgroundRepeat: "no-repeat",
-  height: "905px",
+  height: "99.3vh",
   position: "absolute",
   bottom: 0,
   left: "-428px",

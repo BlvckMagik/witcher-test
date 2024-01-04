@@ -99,3 +99,16 @@ a {
   font-family: "customCambria";
   src: url("/public/fonts/Cambria/cambriab.ttf") format("truetype");
 }
+
+body::after {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  pointer-events: none;
+  z-index: 9999;
+}

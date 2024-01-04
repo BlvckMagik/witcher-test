@@ -2,7 +2,7 @@
 import { styled } from "@mui/system";
 
 export const FrontSparks = styled("img")(({ theme }) => ({
-  height: "636px",
+  height: "69.8vh",
   zIndex: 3,
   backgroundSize: "contain",
   backgroundRepeat: "no-repeat",

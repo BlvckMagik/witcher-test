@@ -6,7 +6,7 @@ export const Witcher = styled("img")(({ theme }) => ({
   backgroundSize: "contain",
   backgroundRepeat: "no-repeat",
   aspectRatio: "1032 / 1079",
-  height: "910px",
+  height: "calc(100vh - 1px)",
   position: "absolute",
   bottom: 0,
   left: "-405px",

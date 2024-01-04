@@ -6,7 +6,7 @@ export const Container = styled("section")(({ theme }) => ({
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  paddingTop: "223.5px",
+  paddingTop: "24.5vh",
 
   [theme.breakpoints.down("md")]: {
     paddingTop: "30px",
