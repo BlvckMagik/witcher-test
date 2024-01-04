@@ -10,13 +10,13 @@ import { Logo } from "@entities/Logo";
 import * as Styled from "./index.styled";
 
 const WitcherBlock: React.FC = () => {
-  // useEffect(() => {
-  //   document.addEventListener("mousemove", applyParallaxEffect);
+  useEffect(() => {
+    document.addEventListener("mousemove", applyParallaxEffect);
 
-  //   return () => {
-  //     document.removeEventListener("mousemove", applyParallaxEffect);
-  //   };
-  // } , []);
+    return () => {
+      document.removeEventListener("mousemove", applyParallaxEffect);
+    };
+  }, []);
 
   return (
     <Styled.Container>
