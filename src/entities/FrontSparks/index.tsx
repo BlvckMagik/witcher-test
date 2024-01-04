@@ -18,6 +18,6 @@ export const FrontSparks = styled("img")(({ theme }) => ({
 
   [theme.breakpoints.down("sm")]: {
     height: "276px",
-    // transition: "all 1s",
+    transition: "all 1s",
   },
 }));
